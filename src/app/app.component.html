@@ -1,0 +1,97 @@
+<ngb-carousel class="shadow" *ngIf="images" [showNavigationArrows]="false" [showNavigationIndicators]="false">
+  <ng-template ngbSlide *ngFor="let image of images">
+    <div>
+      <img class="bg" [src]="image" alt="Random slide">
+    </div>
+  </ng-template>
+</ngb-carousel>
+
+<div class="col-12 text-center">
+  <img class="profile-raised shadow" src="assets/img/profile_pic.jpg">
+</div>
+
+<div class="container">
+
+  <div class="text-center">
+    <h1>Craig Ronald</h1>
+  </div>
+
+  <hr>
+
+  <div class="row">
+    <div class="col-12">
+      <h3>Who I Am</h3>
+      <p>If you've landed on this page, it is likely you found me from my LinkedIn account; or you're an avid golf fan and searched for a previous professional golfer who hogs
+        all the search results for 'Craig Ronald' on Google.
+      </p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <h3>Skills</h3>
+
+      <b>T-SQL / SQL Database Management / SSRS</b>
+      <p><ngb-progressbar [value]="75"></ngb-progressbar></p>
+      <b>Angular Frontend Development</b>
+      <p><ngb-progressbar [value]="70"></ngb-progressbar></p>
+      <b>Firebase Backend Development / NoSQL Database / Hosting</b>
+      <p><ngb-progressbar [value]="75"></ngb-progressbar></p>
+      <b>TypeScript / JavaScript / HTML5 / CSS3 / Bootstrap</b>
+      <p><ngb-progressbar [value]="80"></ngb-progressbar></p>
+
+    </div>
+
+    <div class="col-md-6">
+      <h3>Projects <small>(Swipe left to see more)</small></h3>
+      <img class="project" src="assets/img/keepupketo_bg.png">
+    </div>
+
+  </div>
+
+  <div class="row">
+
+    <div class="col-md-8">
+      <h3>Interests</h3>
+      Test
+    </div>
+
+    <div class="col-md-4">
+      <!-- <iframe src="https://open.spotify.com/embed/playlist/0eV4TC4sQDaynmLu7pSAcE" style="right: 0; width: 100%; height: 380px;" allowfullscreen allow="encrypted-media"></iframe> -->
+      <!-- <iframe src="https://open.spotify.com/embed/playlist/0eV4TC4sQDaynmLu7pSAcE" height=300 frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> -->
+    </div>
+
+    <owl-carousel [options]="mySlideOptions" [items]="myCarouselItems" [carouselClasses]="['owl-carousel', 'owl-theme']" #owlElement>
+      <div class="row">
+        <div class="col-12">
+          <div>
+            <img src="assets/img/carousel_0.jpg" height=300 width=300 />
+          </div>
+          <div>
+            <img src="assets/img/carousel_0.jpg" height=300 width=300 />
+          </div>
+        </div>
+      </div>
+    </owl-carousel>
+
+           <!-- <div class="item" *ngFor="let item of mySlideItems;let i = index">
+        <div [class]="item.mealTypeHTML">
+          <div class="row">
+              <div class="col-12">
+                <img src="./assets/img/main.png" alt="" class="">
+                <div class="inner_text">
+                  <h3>{{item.mealType}}</h3>
+                  <h4>{{item.name}}</h4>
+                  <h4>{{item.calories}} kcal</h4>
+                </div>
+              </div>
+
+          </div>
+        </div>
+      </div> -->
+
+  </div>
+
+</div>
+
+
