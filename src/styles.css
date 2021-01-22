@@ -2,3 +2,33 @@
 .progress-bar {
   background-color: #e1c98e !important;
 }
+
+.owl-item {
+  opacity: 0;
+  transition: opacity 500ms;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 10px;
+}
+.owl-item.active {
+  opacity: 1;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 10px;
+}
+
+.owl-item:hover {
+  display: block;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.owl-carousel .owl-stage-outer {
+  overflow: visible;
+}
+/* #panel {
+  padding: 0 20px 40px;
+  display:inline-block;
+  width: 100%;
+
+} */

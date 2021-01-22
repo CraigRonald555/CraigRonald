@@ -13,7 +13,7 @@ export class AppComponent {
   @ViewChild('owlElement') owlElement: OwlCarousel;
   myCarouselItems = [];
   mySlideItems = [];
-  mySlideOptions = {margin: 5, dots: false, nav: false, responsive: {
+  mySlideOptions = {margin: 5, dots: false, nav: true, responsive: {
     0: {
       items: 1,
       autoplay: false,
@@ -27,7 +27,7 @@ export class AppComponent {
       autoplay: false,
     },
     680: {
-      items: 3,
+      items: 2,
       autoplay: false,
     },
 
@@ -39,5 +39,15 @@ export class AppComponent {
 
     config.interval = 5000;
 
+    this.mySlideItems.push("assets/img/keepupketo_bg.png","assets/img/gapjumpers_bg.png","assets/img/fpl_bg.png");
+
+
   }
+
+  navigateToProject(){
+
+    console.log('Clicked project');
+
+  }
+
 }
