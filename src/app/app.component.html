@@ -52,7 +52,7 @@
       <h3>Projects <small>(Swipe left to see more)</small></h3>
       <owl-carousel [options]="mySlideOptions" [items]="myCarouselItems" [carouselClasses]="['owl-carousel', 'owl-theme']" #owlElement>
         <div class="item" *ngFor="let item of mySlideItems" (click)="navigateToProject()">
-          <img [src]=item />
+          <a [href]="item.link" target="_blank"><img [src]=item.image /></a>
         </div>
       </owl-carousel>
 

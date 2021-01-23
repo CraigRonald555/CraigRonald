@@ -39,7 +39,9 @@ export class AppComponent {
 
     config.interval = 5000;
 
-    this.mySlideItems.push("assets/img/keepupketo_bg.png","assets/img/gapjumpers_bg.png","assets/img/fpl_bg.png");
+    this.mySlideItems.push({link: "https://github.com/CraigRonald555/KeepUpKeto", image: "assets/img/keepupketo_bg.png"},
+    {link: "https://github.com/CraigRonald555/GapJumpers-Blind-Audition", image: "assets/img/gapjumpers_bg.png"},
+    {link: "https://github.com/CraigRonald555/FPL-Squad-Selecting-Algorithm-Testing-API", image: "assets/img/fpl_bg.png"});
 
 
   }
